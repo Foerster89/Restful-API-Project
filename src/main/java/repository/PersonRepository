@@ -1,0 +1,9 @@
+package com.afoerster.apirestfulbasica.repository;
+
+import com.afoerster.apirestfulbasica.model.Person;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface PersonRepository extends JpaRepository<Person, Long> {
+}

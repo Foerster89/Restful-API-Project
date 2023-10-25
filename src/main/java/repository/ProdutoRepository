@@ -1,0 +1,11 @@
+package com.afoerster.apirestfulbasica.repository;
+
+import com.afoerster.apirestfulbasica.model.Produto;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProdutoRepository extends JpaRepository<Produto, Long> {
+    // Os métodos CRUD básicos já são fornecidos pelo JpaRepository.
+    // Se precisar de consultas personalizadas, você pode definí-las aqui.
+}
